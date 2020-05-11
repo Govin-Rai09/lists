@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("pic.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+header {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: bisque;
+}
+header,
+form {
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input,
+button {
+  padding: 1rem;
+  border: none;
+  background: lightgray;
+  outline: none;
+  font-size: 1rem;
+  color: green;
+}
+button {
+  background: red;
+  cursor: pointer;
+}
+button:hover {
+  background: grey;
+  color: aqua;
+}
+.ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lists {
+  list-style: none;
+  min-width: 45%;
+}
+.mom {
+  background: lightgoldenrodyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: yellowgreen;
+  margin: 5px;
+  font-size: 1rem;
+}
+.mom li {
+  flex: 1;
+}
+.dad {
+  padding: 0 0.5rem;
+}
+.comp,
+.trash {
+  cursor: pointer;
+  color: grey;
+}
+.comp {
+  background: greenyellow;
+}
+.fa-trash,
+.fa-user-check {
+  pointer-events: none;
+}
+
+.comp {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.mall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
